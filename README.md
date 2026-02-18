@@ -8,7 +8,7 @@ Pre-configured for the South African market with default ZAR (R) pricing.
 
 ## 🔗 Live Demo
 
-Experience the template in action: **[Insert Live Demo Link Here]**
+Experience the template in action: **[https://wanadebotman.github.io/Shark-Photography/]**
 
 ## ✨ Features
 
