@@ -1,149 +1,50 @@
-<img width="1900" height="802" alt="Screenshot 2026-02-18 134621" src="https://github.com/user-attachments/assets/84032315-45d7-4ed1-9612-c84b66a216e3" />
-# Sharkcxde Photography — Premium Landing Page 
+<img width="1900" height="802" alt="Screenshot 2026-02-18 134621" src="https://github.com/user-attachments/assets/a6f491ba-97ad-44e6-9024-aca83eb6a8e1" />
 
-A **premium, mobile-first photography landing page** built with **HTML, CSS, and JavaScript**.  
-It’s designed to feel modern and cinematic with a clean booking flow, a curated gallery, and a smooth lightbox experience — perfect as a demo template or a real client starter.
+# 🦈 Sharkcxde Photography
 
----
+A premium, cinematic photography landing page designed for events, weddings, portraits, and brand shoots. Built with a mobile-first approach, this template features a clean UI, dynamic gallery filtering, a keyboard-accessible lightbox, and a consultation-first booking flow.
+
+Pre-configured for the South African market with default ZAR (R) pricing.
+
+## 🔗 Live Demo
+
+Experience the template in action: **[Insert Live Demo Link Here]**
 
 ## ✨ Features
 
-- **Mobile-first, premium UI** (glass panels, strong typography, clean spacing)
-- **Curated gallery grid**
-  - Category **filter chips**
-  - **Lightbox** with keyboard support (Esc / ← / →)
-- **Smooth section navigation**
-  - Sticky nav + active section highlighting
-  - **Sticky CTA** on mobile
-- **Consultation form (demo)**
-  - Client-side validation
-  - Demo submit success message (ready to connect to a backend)
-- **One social section only**
-  - Social icons in the **contact section**
-  - Neutral default + **brand colors on hover**
-- **Accessible basics**
-  - Focus states, skip link, aria labels, readable contrast
+* **Cinematic Dark UI:** A moody, professional aesthetic utilizing custom CSS variables, gradients, and a sleek typography pairing (Fraunces & Source Sans 3).
+* **Fully Responsive:** Mobile-first design with a sticky mobile CTA that seamlessly adapts to desktop layouts.
+* **Dynamic Gallery:** * Category filtering (Weddings, Events, Portraits, etc.) without page reloads.
+    * Custom, vanilla JavaScript lightbox with keyboard navigation (`Arrow keys`, `Esc`) and focus trapping for accessibility.
+* **Smooth UX:** Scroll-spy navigation highlights the active section as you scroll, complemented by smooth scroll reveals using `IntersectionObserver`.
+* **Consultation Form:** Built-in vanilla JS form validation ensuring valid email formats and minimum message lengths before submission.
 
----
+## 🛠️ Tech Stack
 
-## 🧱 Tech Stack
-
-- **HTML5**
-- **CSS3**
-- **Vanilla JavaScript**
-- Google Fonts:
-  - *Fraunces* (display)
-  - *Source Sans 3* (body)
-
----
-
-## 📁 Project Structure
-
-.
-├── index.html
-├── style.css
-├── script.js
-└── images/
-├── hero.png
-├── axel-gallay-TVJo2DB_gB0-unsplash.jpg
-├── al-elmes-ULHxWq8reao-unsplash.jpg
-├── darwin-boaventura-s_S1tucCArY-unsplash.jpg
-├── baptiste-buisson-N1UJRmTzumE-unsplash.jpg
-├── brad-starkey-rrCsh37KY5I-unsplash.jpg
-├── david-henrichs-72AYEEBJpz4-unsplash.jpg
-├── javier-esteban-EVh1R7SkkQ4-unsplash.jpg
-└── jakob-owens-mLIurLmSRAY-unsplash.jpg
-
-
-✅ **Important:** The site expects images inside the `images/` folder.  
-If images don’t load, double-check spelling and capitalization.
-
----
+* **HTML5:** Semantic markup with strict accessibility (ARIA labels, focus states).
+* **CSS3:** Custom properties, CSS Grid/Flexbox, and keyframe animations. Zero external CSS frameworks.
+* **JavaScript (ES6+):** Vanilla JS for DOM manipulation, form validation, and intersection observers. Zero dependencies.
 
 ## 🚀 Getting Started
 
-### Option 1 — Open directly
-1. Download / clone the project
-2. Open `index.html` in your browser
+Since this is a static website, no complex build tools are required.
 
-### Option 2 — Run with a local server (recommended)
-Using VS Code:
-1. Install **Live Server**
-2. Right-click `index.html` → **Open with Live Server**
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/yourusername/sharkcxde-photography.git](https://github.com/yourusername/sharkcxde-photography.git)
+    ```
+2.  **Open the project:**
+    Simply open the `index.html` file in your preferred web browser, or use a local server extension like VS Code's "Live Server" for hot-reloading.
 
-Or using Node:
-```bash
-npx serve .
-🛠️ Customization Guide
-1) Change the brand name
-Edit in index.html:
+## 🎨 Customization Guide
 
-Navbar brand text
+To make this template your own, you will need to update a few key areas:
 
-Page title <title>
+* **Images:** Replace the placeholder images in the `images/` directory with your own portfolio work. Update the `src` and `alt` attributes in the `#work` section.
+* **Pricing:** The packages are currently set to demo pricing in ZAR (R3,000 / R7,500). Update the `.price-tag` elements in the `index.html` file to reflect your actual rates.
+* **Social Links:** Update the `href` attributes in the `.social-icons` block and remove the `data-demo="true"` attributes to activate the links.
+* **Backend Integration:** The consultation form currently simulates a successful submission. To receive real inquiries, hook the `<form id="consultationForm">` up to a form-handling service (like Formspree or Netlify Forms) or your own backend API inside the `script.js` submission event listener.
 
-2) Replace images
-Put new images in /images
+## 👨‍💻 Created By
 
-Update gallery image src paths in index.html
-
-Example:
-
-<img src="images/my-new-photo.jpg" alt="Description" />
-3) Add real social links
-In index.html, replace href="#" for the social icon links inside the contact section:
-
-<a class="si-link" data-brand="instagram" href="https://instagram.com/yourpage" target="_blank" rel="noopener">
-4) Update packages + pricing
-In the Packages section of index.html, change:
-
-Package names
-
-Pricing text
-
-Bullet items
-
-5) Make the form actually send messages
-Right now the form uses a demo “success” message in script.js.
-
-To connect it to a backend:
-
-Use a service like Formspree, Netlify Forms, or a custom API endpoint
-
-Replace the demo setTimeout() submit handler with a fetch() call
-
-♿ Accessibility Notes
-This project includes:
-
-Skip link for keyboard users
-
-Focus-visible rings
-
-Dialog-style lightbox with keyboard navigation
-
-Buttons used for gallery items (more accessible than clickable divs)
-
-If you want to go further:
-
-Add aria-live confirmation after lightbox opens
-
-Add reduced motion support (prefers-reduced-motion)
-
-🌍 Deployment
-GitHub Pages
-Push to GitHub
-
-Go to Settings → Pages
-
-Select your branch (main) and root (/)
-
-Save — your site will publish with a public URL
-
-👤 Author
-
-Designed & developed by Sharkcxde Web Studio
-
-📸 Image Credits
-This demo uses placeholder photography.
-Replace images with your own before using commercially.
-
+**Sharkcxde Web Studio**
